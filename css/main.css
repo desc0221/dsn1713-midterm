@@ -2,8 +2,9 @@
 
 /* Set custom variables here */
 :root {
-  --primary-bg-clor: green;
+  --primary-bg-color: rgb(53, 72, 53);
   --custom-variables:#ffffff;
+  --bg-primary:rgb(62, 74, 62);
 
   /* Buttons */
   --button-primary-bg:rgb(33, 75, 33);
@@ -13,10 +14,6 @@
 }
 
 
-
-.logo{
-  height: 25px;
-}
 .navbar-brand {
   color: #F6F3ED;
 }
@@ -57,6 +54,21 @@ h1, h2, h3 {
   font-family: "Merriweather", serif;
 }
 
+/* Navbar */
+.navbar {
+  background-color: var(--primary-bg-color);
+}
+
+
+
+
+
+
+
+
+
+
+
 /* Banner */
 #hero {
   height: 750px;
@@ -65,49 +77,35 @@ h1, h2, h3 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  display: flex;
-  justify-content: center;
   
 }
-.hero-content{
-  text-align: center;
-  margin-top: 100px;
-  margin-left: 280px;
-  margin-right: 280px;
-}
 
-.banner-title{
-  font-size: xx-large;
+.hero-content{
+  margin-bottom: 250px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 /* Pick you plan section */
  .intro{
 text-align: center;
-margin-left: 280px;
-margin-right: 280px;
+margin-left: 100px;
+margin-right: 100px;
+margin-bottom: 70px;
 } 
 
 .grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-content: center;
-  text-align: center;
-  gap: 20px;
-  margin: 50px 70px 50px 70px;
+  gap: 40px;
+  margin: 50px 170px 50px 170px;
 } 
 
 /* two column section */
-.grid-2{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 50px;
-  margin-left: 150px;
-  margin-right: 150px;
-}
+/* .grid-2{
+  margin-top: 70px;
+  justify-content: center;
+  text-align: center;
+} */
 
-.img-size{
-  height: 400px;
-}
 
 h2{
   text-align: center;
@@ -117,23 +115,66 @@ li{
   list-style: none;
 }
 
-.small-text{
-  font-size: smaller;
-}
 
 .grid-2-text{
-  margin-top: 50px;
+  margin-top: 70px;
 }
+
+/* customer Reviews section */
+
+.grid-3{
+   margin-top: 80px;
+}
+
+.circle-img{
+  border-radius: 100px;
+}
+
+#reviews{
+  color: var(--custom-variables);
+  background-color: var(--primary-bg-color);
+}
+.blockquote-footer{
+  color: var(--custom-variables);
+}
+
+/* Questions */
+
+.questions{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
 #hero .d-flex {
   height: 800px;
 }
+.accordion{
+  margin-top: 70px;
+}
 
+
+/* Call to action */
 #cta {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/cta-bg.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  color: var(--custom-variables);
+  height: 600px;
+  padding: 50px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
+
+/* Footer */
+#footer{
+  color: var(--custom-variables);
+  background-color: var(--primary-bg-color);
+}
+
+
 
 #cta .d-flex {
   height: 400px;
@@ -148,4 +189,28 @@ section:not(#hero):not(#cta){
   section:not(#hero):not(#cta){
     padding: 100px 0;
   }
+
+  .intro{
+    text-align: center;
+    margin-left: 440px;
+    margin-right: 440px;
+    margin-bottom: 70px;
+    } 
+
+    .questions{
+      margin-left: 300px;
+      margin-right: 300px;
+    }
+    .grid-2{
+      margin-top: 70px;
+    }
+    .img-size{
+      height: 480px;
+    }
+
+    .hero-content{
+      margin-bottom: 250px;
+      margin-left: 380px;
+      margin-right: 380px;
+    }
 }
